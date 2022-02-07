@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cube">
+        <div class="top"></div>
+        <div id ='shape'></div>
+    </div>
+    <script>
+        container = document.getElementById('shape')
+        for(i=0;i<36;i++){
+            sides = document.createElement('span')
+            sides.setAttribute("style", `--i:${i}`)
+            container.appendChild(sides)
+        }
+    </script>
+</body>
+</html>
